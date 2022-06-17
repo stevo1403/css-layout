@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%)
+}
+
+h2, button{
+    background-color: hsl(0, 0%, 95%);
+}
+
+p{
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    height: 50px;
+    flex-direction: row-reverse;
+}
+header p{
+    height: 100%;
+    background-color: black;
+    border-radius: 2px;
+    font-family: monospace;
+}
+
+header p a{
+    color: white;
+    text-decoration: none;
+}
+main.flex-container #f-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+main.flex-container #f-2{
+    background-color: hsl(184, 100%, 22%);
+}
+main.flex-container #f-3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main.flex-container div.flex-item{
+    height: 319px;
+    width: 187px;
+    padding: 25px;
+    position: relative;
+}
+
+main.flex-container div.flex-item div.box-icon{
+    margin-bottom: 10px;
+}
+
+main.flex-container div.flex-item h2.box-title{
+    margin-bottom: 10px;
+    font-family: 'Big Shoulders Display', 'Monospace';
+    color: white;
+    background-color: transparent;
+}
+
+main.flex-container div.flex-item div.box-content{
+    font-family: 'Lexend Deca', 'Monospace';
+    font-size: 14px;
+    font-weight: lighter;
+    color: hsl(0, 0%, 95%);
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+main.flex-container div.flex-item  div.box-button{
+    position: absolute;
+    bottom: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lexend Deca', 'Monospace';
+}
+
+main.flex-container div.flex-item div.box-button button{
+    background-color: white;
+    padding: 9px 13px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    font-weight: 500;
+}
+
+main.flex-container div.flex-item div.box-button button:hover{
+    background-color: transparent;
+}
+
+main.flex-container #f-1 div.box-button button{
+    color: hsl(31, 77%, 52%);
+}
+main.flex-container #f-2 div.box-button button{
+    color: hsl(184, 100%, 22%);
+}
+main.flex-container #f-3 div.box-button button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 375px){
+    main.flex-container .flex-item{
+        border-radius: 0px !important;
+    }
+
+}
