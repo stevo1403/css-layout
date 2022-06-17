@@ -13,22 +13,28 @@ p{
 }
 
 header{
-    width: 100%;
-    background-color: white;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    height: 50px;
-    flex-direction: row-reverse;
-}
-header p{
-    height: 100%;
     background-color: black;
     border-radius: 2px;
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+header p{
+    height: 100%;
+    margin-right: 10px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 2px;
     font-family: monospace;
+    float: right;
 }
 
 header p a{
-    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 main.flex-container #f-1{
@@ -47,7 +53,7 @@ main.flex-container #f-3{
 
 main.flex-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row no-wrap;
     justify-content: center;
 }
 
@@ -71,7 +77,7 @@ main.flex-container div.flex-item h2.box-title{
 
 main.flex-container div.flex-item div.box-content{
     font-family: 'Lexend Deca', 'Monospace';
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     color: hsl(0, 0%, 95%);
     opacity: 0.7;
@@ -107,6 +113,12 @@ main.flex-container #f-3 div.box-button button{
 }
 
 @media (max-width: 375px){
+    main.flex-container{
+        flex-wrap: wrap;
+    }
+        main.flex-container .flex-item{
+        width: 100%;
+    }
     main.flex-container .flex-item{
         border-radius: 0px !important;
     }
